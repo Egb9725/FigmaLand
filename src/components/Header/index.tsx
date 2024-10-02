@@ -1,46 +1,86 @@
-import React from 'react';
+import { useState } from "react";
+import Icons from "../Icons/index";
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-   
+    <header className="bg-gray-900 text-white py-4">
+      <div className="container mx-auto flex justify-between items-center px-4">
+        {/* Logo centré */}
+        <div className="flex items-center justify-between w-full md:w-auto">
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="md:hidden text-white focus:outline-none"
+          >
+            {/* Icône du menu burger pour la version mobile */}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16m-7 6h7"
+              />
+            </svg>
+          </button>
 
-
-    
-    <div className="absolute top-[-0.2rem] right-[0rem] flex w-[111.1rem] h-[0.1rem] box-sizing-border" style={{ backgroundImage: "url('https://res.cloudinary.com/doq50mquo/image/upload/v1725440643/Rectangle_9_y4ydtr.png')" }}>
-        
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            {/* Navigation */}
-        
-                <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
-                    <a href="#home" className="text-white hover:text-gray-300">Home</a>
-                    <a href="#product" className="text-white hover:text-gray-300">Product</a>
-                    <a href="#pricing" className="text-white hover:text-gray-300">Pricing</a>
-                    <a href="#about" className="text-white hover:text-gray-300">About</a>
-                    <a href="#contact" className="text-white hover:text-gray-300">Contact</a>
-                </div>
-           
-            {/* Logo */}
-                <div className="flex items-center space-x-2">
-                    <img className="rounded-full" src="https://res.cloudinary.com/doq50mquo/image/upload/v1725440638/Rectangle_4_vtysq9.png" alt="photo" />
-                </div>
-
-            {/* Icone */}
-        
-            
+          {/* Logo Figma Land */}
+          <div className="mx-auto md:mx-0">
+            <img
+              src="https://res.cloudinary.com/doq50mquo/image/upload/v1725440638/Rectangle_4_vtysq9.png"
+              alt="Figma Land"
+              className="h-10"
+            />
+          </div>
         </div>
-        <section className="bg-cover bg-center h-screen text-center flex flex-col justify-center items-center" >
-            <h2 className="text-white text-4xl font-bold">The best products start with Figma</h2>
-            <p className="text-white mt-4">Most calendars are designed for teams. Slate is designed for freelancers.</p>
-            <button className="mt-6 bg-purple-600 text-white py-2 px-4 rounded">Get Started</button>
-        </section>
 
+        {/* Navigation */}
+        <nav className="hidden md:flex space-x-6">
+          <a href="#" className="hover:text-gray-300">
+            Home
+          </a>
+          <a href="#" className="hover:text-gray-300">
+            Product
+          </a>
+          <a href="#" className="hover:text-gray-300">
+            About
+          </a>
+          <a href="#" className="hover:text-gray-300">
+            Contact
+          </a>
+        </nav>
+
+        {/* Icônes */}
+        <div className="flex space-x-4">
+          <Icons />
+        </div>
       </div>
-     
 
-
+      {/* Menu déroulant pour la version mobile */}
+      {isOpen && (
+        <nav className="md:hidden bg-gray-800">
+          <a href="#" className="block py-2 px-4 hover:bg-gray-700">
+            Home
+          </a>
+          <a href="#" className="block py-2 px-4 hover:bg-gray-700">
+            Product
+          </a>
+          <a href="#" className="block py-2 px-4 hover:bg-gray-700">
+            About
+          </a>
+          <a href="#" className="block py-2 px-4 hover:bg-gray-700">
+            Contact
+          </a>
+        </nav>
+      )}
+    </header>
   );
 };
 
 export default Header;
-
-

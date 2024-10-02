@@ -1,26 +1,23 @@
-import { useState } from 'react'
-import Header from './components/Header';
-import Hero from './components/Hero';
 import Features from './components/Features';
 import Partenaires from './components/Partenaires';
+import Videos from './components/Videos';
 import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
-import './App.css'
+import Header from './components/Header';
+import Hero from './components/Hero';
 
-function App() {
+const App: React.FC = () => {
 
   return (
     <>
-      <div>
+      <div className="min-h-screen bg-white">
 
         <Header />
-        <main>
-          {/* Other sections such as Hero, Features */}
-  
-          <Features />
-          <Partenaires />
-          <Testimonials />
-        </main>
+        <Hero/>
+        <Features />
+        <Videos />
+        <Partenaires />
+        <Testimonials />
         <Footer />
   
 

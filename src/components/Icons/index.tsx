@@ -1,19 +1,21 @@
-import React from 'react';
+import { IoLogoFacebook } from "react-icons/io";
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa6";
 
 const Icons = () => {
   return (
     <div className="flex space-x-4">
-        <a href="https://twitter.com" className="text-white hover:text-gray-300">
-        <i className="fab fa-twitter"></i>
-        </a>
-        <a href="https://facebook.com" className="text-white hover:text-gray-300">
-        <i className="fab fa-facebook"></i>
-        </a>
-        <a href="https://linkedin.com" className="text-white hover:text-gray-300">
-        <i className="fab fa-linkedin"></i>
-        </a>
+      <a href="#">
+        <FaSquareXTwitter className="w-5 h-5" />
+      </a>
+      <a href="#">
+        <IoLogoFacebook className="w-5 h-5" />
+      </a>
+      <a href="#">
+        <FaLinkedin className="w-5 h-5" />
+      </a>
     </div>
   );
-}
+};
 
 export default Icons;
