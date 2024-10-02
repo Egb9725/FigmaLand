@@ -1,4 +1,4 @@
-import { FaSearch, FaChartBar, FaBolt } from 'react-icons/fa'; // Exemple avec FontAwesome icons
+import { FaSearch, FaChartBar, FaBolt } from 'react-icons/fa';
 
 const Features = () => {
   return (

@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white py-12">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-4 gap-8 text-center md:text-left"> {/* Text centered on small screens */}
+        <div className="grid md:grid-cols-4 gap-8 text-center md:text-left">
           <div>
             <h3 className="font-bold mb-4">Pages</h3>
             <ul className="space-y-2">
@@ -35,7 +35,7 @@ const Footer = () => {
               <li><a href="#" className="hover:text-gray-300">Bruce Simmmons</a></li>
             </ul>
           </div>
-          <div className="flex flex-col items-center md:items-start"> {/* Center on small screens, left-align on larger */}
+          <div className="flex flex-col items-center md:items-start"> 
             <p>© 2024 Company. All rights reserved.</p>
             <p>(239) 555-0108</p>
             <div className="flex space-x-4 mt-4">
