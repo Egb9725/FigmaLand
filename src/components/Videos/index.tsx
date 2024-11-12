@@ -2,7 +2,7 @@ import { FaPlay } from 'react-icons/fa'; // Import de l'icône de play
 
 const Videos = () => {
   return (
-    <section className="py-16 bg-gray-100">
+    <section className="py-16">
       <div className="container mx-auto px-4">
         <div
           className="relative w-full h-[300px] md:h-[400px] lg:h-[658.3px] rounded-lg overflow-hidden bg-cover bg-center"

@@ -5,8 +5,9 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="bg-gray-900 text-white py-4">
+    <header className="text-white py-4">
       <div className="container mx-auto flex justify-between items-center px-4">
+
         {/* Logo centré */}
         <div className="flex items-center justify-between w-full md:w-auto">
           <button
@@ -30,18 +31,11 @@ const Header = () => {
             </svg>
           </button>
 
-          {/* Logo Figma Land */}
-          <div className="mx-auto md:mx-0">
-            <img
-              src="https://res.cloudinary.com/doq50mquo/image/upload/v1725440638/Rectangle_4_vtysq9.png"
-              alt="Figma Land"
-              className="h-10"
-            />
-          </div>
+         
         </div>
 
         {/* Navigation */}
-        <nav className="hidden md:flex space-x-6">
+        <nav className="hidden md:flex space-x-6 items-center">
           <a href="#" className="hover:text-gray-300">
             Home
           </a>
@@ -54,6 +48,16 @@ const Header = () => {
           <a href="#" className="hover:text-gray-300">
             Contact
           </a>
+
+           {/* Logo Figma Land */}
+           <div className="mx-auto md:mx-0">
+            <img
+              src="https://res.cloudinary.com/doq50mquo/image/upload/v1725440638/Rectangle_4_vtysq9.png"
+              alt="Figma Land"
+              className="h-10"
+            />
+          </div>
+
         </nav>
 
         {/* Icônes */}

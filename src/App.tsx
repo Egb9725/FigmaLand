@@ -3,7 +3,6 @@ import Partenaires from './components/Partenaires';
 import Videos from './components/Videos';
 import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
-import Header from './components/Header';
 import Hero from './components/Hero';
 
 const App: React.FC = () => {
@@ -12,7 +11,6 @@ const App: React.FC = () => {
     <>
       <div className="min-h-screen bg-white">
 
-        <Header />
         <Hero/>
         <Features />
         <Videos />

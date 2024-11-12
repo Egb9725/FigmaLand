@@ -18,7 +18,7 @@ const Partenaires = () => {
                   { name: 'Uber', src: 'https://res.cloudinary.com/doq50mquo/image/upload/v1725443086/Rectangle_2_cuy3ek.png' },
                   { name: 'Amazon', src: 'https://res.cloudinary.com/doq50mquo/image/upload/v1725443086/Rectangle_w0ape0.png' },
                 ].map((partner, index) => (
-                  <div key={index} className="flex items-center justify-center h-20 bg-gray-100 rounded-lg">
+                  <div key={index} className="flex items-center justify-center h-20 rounded-lg">
                     <img
                       src={partner.src}
                       alt={`${partner.name} logo`}
